@@ -1,0 +1,304 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,700);
+* {
+    box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+/* Mixin itself */
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+/* Usage as a mixin */
+.element {
+  @include clearfix;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+.row__header {
+  height: 33px;
+  background-color: #000;  
+}
+.block-1,.block-2 {
+  color: rgba(150, 150, 150, 1);
+  font-size: 12px;
+  padding-top: 9px;
+  height: 44px;
+}
+.number {
+  display: inline-block;
+  margin-left: 15px; 
+  font-family: 'PT Sans';
+  font-weight: 400; 
+}
+.phone {
+  margin-bottom: 3px;
+}
+.block-2 a {
+  text-decoration: none;
+  color: rgba(150, 150, 150, 1);
+}
+.block__link {
+  display: inline-block;
+  margin-left: 5px;
+  font-family: 'PT Sans';
+  font-weight: 400; 
+}
+.header__block {
+  background-color: rgba(15, 15, 15, 1);
+  height: 80px;
+  
+}
+.header__logo {
+  padding-top: 27px;
+}
+.block__buttom-1,.block__buttom-2,.block__buttom-3 {
+  padding: 25px 10px 0px 10px;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 14px; 
+}
+.header__block a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+.block__icons {
+  padding-top: 20px;
+}
+.bx-cart {
+  padding-right: 40px;
+  margin-left: 20px;
+}
+.second__line:hover {
+  background-color: rgba(31, 31, 31, 1);
+}
+.fullscreen {
+  min-height: 100vh;
+  background-image: url(/image/Rectangle-3.png);
+  background-position: center;
+  background-size: cover;
+}
+.fullscreen__text {
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 16px; 
+}
+.fullscreen__logo {
+  margin: 160px auto 80px;
+}
+.body__block-1 {
+  background-color: #000;
+  height: 742px;
+}
+.title__block-1{
+  margin-top: 93px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 36px;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.line__block-1{
+  margin-top: 50px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.item-1__block-1,.item-2__block-1,.item-3__block-1 {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 50px 25px 20px 20px;
+  width: 260px;
+  height: 325px;
+  background-color: rgba(25, 27, 28, 1);
+ 
+}
+.title-1__block-1,.title-2__block-1,.title-3__block-1 {
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-family: 'Playfair Display';
+  font-weight: 400;
+}
+.price-1__block-1,.price-2__block-1,.price-3__block-1 {
+  margin-top: 10px;
+  color: rgba(208, 208, 208, 1);
+  font-size: 16px;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+}
+.body__block-2 {
+  background-image: url(/image/Rectangle\ 8.png);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+.title__block-2 {
+  font-size: 36px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 484px;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  text-transform: uppercase;  
+}
+.line__block-2 {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 30px;
+}
+.buttom__block-2 {
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+.fullscreen-1 {
+    min-height: 100vh;
+    background: url(/image/Rectangle\ 9.png) center /  cover no-repeat fixed;    
+}
+.body__block-4 {
+  padding: 20px 0px;
+  background-color: #000;
+  height: 100%;
+}
+.line__block-4 {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 40px;
+}
+.title__block-4 {
+  font-size: 36px;
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  margin-top: 120px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+.text__block-4 {
+  font-family: 'PT Sans';
+  font-size: 14px;
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 1); 
+}
+.buttom__block-4{
+  margin-top: 40px;
+}
+.body__block-5 {
+  background-color: #000;
+  padding: 120px 0px 150px;
+}
+.title__block-5 {
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.line__block-5 {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 1);
+  margin-bottom: 80px;
+}
+.item__block-5 {
+  margin-bottom: 40px;  
+}
+.title-1__block-5 {
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin: 25px 0px 10px;
+  
+}
+.price-1__block-5 {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(208, 208, 208, 1);
+}
+.color__fon {
+  background-color: rgba(25, 27, 28, 1);
+  width: 260px;
+  height: 325px;
+  padding: 50px 0px 0px 20px;
+}
+.body__block-6 {
+  background-color: rgba(15, 15, 15, 1);
+  padding: 60px 0px 80px;
+}
+.title__block-6 {
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 1);
+}
+.line__block-6 {
+  height: 1px;
+  width: 120px;
+  
+  background-color: rgba(255, 255, 255, 1);
+  
+}
+.item__block-6 {
+  margin-top: 40px;
+}
+.subFuter {
+  height: 500px;
+  background-image: url(/image/Rectangle\ 15.png);
+  background-position: center ;
+  background-size: cover;
+  padding: 80px 0px 100px;
+}
+.subFuter__block-1 {
+  
+}
+.subFuter__title-1,.subFuter__title-2,.subFuter__title-3 {
+  font-family: 'Playfair Display';
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.subFuter__text-1,.subFuter__text-3 {
+  font-family: 'PT Sans';
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 40px;
+}
+.subFuter__item-1 {
+  margin-bottom: 30px;
+}
+.subFuter__form-1 {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(150, 150, 150, );
+  
+}
+.subFuter__form-1:focus {
+  background-color: rgba(255, 255, 255, 0.6); 
+}
+.futer {
+  height: 50px;
+  background-color: #000;
+  padding: 17px 0px;
+}
+.futer__text {
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(208, 208, 208, 1);
+}
